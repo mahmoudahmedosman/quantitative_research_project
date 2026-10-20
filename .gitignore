@@ -3,3 +3,5 @@ data/
 __pycache__/
 *.pyc
 .env
+notebooks/01_universe_comparison.ipynb
+notebooks/02_volatility.ipynb
