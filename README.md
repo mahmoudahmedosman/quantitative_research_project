@@ -18,10 +18,10 @@ There is little publicly available, rigorous quantitative research on Islamicall
 quant-research/
 ├── data/                          # Cached market data (May not be included in the Git)
 ├── notebooks/
-│   ├── 03\_traditional\_signals.ipynb   # Quick look at traditional signals used
-│   ├── 04\_systematic\_study.ipynb      # Systematic studies of S\&P500 vs SPUS (Phase 1 complete)
-│   ├── 05\_strategies\_models.ipynb     # Backtesting strategies and validating models (planned)
-│   └── 06\_simulation\_inference.ipynb  # Simulation-based inference market simulation (planned for long term)
+│   ├── 03_traditional_signals.ipynb   # Quick look at traditional signals used
+│   ├── 04_systematic_study.ipynb      # Systematic studies of S\&P500 vs SPUS (Phase 1 complete)
+│   ├── 05_strategies_models.ipynb     # Backtesting strategies and validating models (planned)
+│   └── 06_simulation_inference.ipynb  # Simulation-based inference market simulation (planned for long term)
 ├── src/
 │   ├── universe.py    # Universe definitions and Sharia screening
 │   ├── data.py        # Data loading and caching
@@ -44,32 +44,7 @@ quant-research/
 |Diff|Excluded companies (SP500 − SPUS)|\~78|
 
 **Sharia screening (Stage 1)** excludes companies with material revenue from: conventional banking and insurance, alcohol, tobacco, gambling, weapons manufacturing, pork, and adult entertainment. Stage 2 financial ratio screens (debt/market cap < 33%) are not yet applied — this is noted as a limitation and planned for Part 1b.
-
-\---
-
-## Results
-
-### Part 1a — Universe Characterisation and Signal Analysis (2015–2026)
-
-**Return and risk metrics**
-
-Mean annualised returns are 5.81% ± 8.97% for SP500, 6.09% ± 9.31% for SPUS, and 2.12% ± 3.38% for the excluded companies. While SPUS shows a marginally higher mean return, this difference is not statistically significant (p=0.65). Both SP500 and SPUS significantly outperform the excluded universe (p=0.0002 and p=0.0004 respectively), whose lower returns reflect the underperformance of conventional financials, REITs, and defence stocks over this period.
-
-Mean Sharpe ratios are similar across all three groups (SP500: 0.35 ± 0.23, SPUS: 0.36 ± 0.24, Diff: 0.31 ± 0.20), with all values within one standard deviation of each other. Maximum drawdown is near-identical across universes (approximately −59%), indicating that Sharia screening provides no protection against market-wide tail risk.
-
-**Signal analysis**
-
-We evaluate momentum, short-term reversal, and volatility signals using Spearman rank correlation and Pearson correlation between signal scores and 21-day forward returns.
-
-*Momentum* shows no significant rank-predictive power under Spearman (p=0.36/0.29), but significant magnitude predictability under Pearson (p=0.002/0.0003). This divergence indicates a non-linear relationship concentrated in the tails — extreme momentum stocks outperform meaningfully while the bulk of the ranking carries little signal. SPUS shows marginally stronger momentum IC under Pearson (0.018 vs 0.015).
-
-*Volatility* produces a significantly negative IC in both universes (Spearman IC ≈ −0.034, p<0.001; Pearson IC ≈ −0.040, p<0.001). High-volatility stocks outperform low-volatility stocks at the 21-day horizon — a horizon effect: at short horizons in trending markets, high-volatility stocks generate larger moves that are more often positive. The low-volatility premium documented in the literature manifests at longer horizons on a risk-adjusted basis. SP500 and SPUS produce virtually identical results (comparison p=0.999).
-
-*Short-term reversal* is the most robust signal, exhibiting significant rank-predictive power in both universes under Spearman (SP500: IC=0.012, p=0.0004; SPUS: IC=0.011, p=0.001). Under Pearson, reversal magnitude is significant for SP500 (p=0.023) but not for SPUS (p=0.12), suggesting that excluded financial stocks contribute disproportionately to magnitude predictability of the reversal signal.
-
-**Key finding**
-
-Across all three signals and both methods, direct comparison of IC series between SP500 and SPUS yields p-values above 0.6 in every case (Spearman: momentum p=0.93, volatility p=0.999, reversal p=0.79; Pearson: momentum p=0.72, volatility p=0.92, reversal p=0.62). The signal predictive structure is statistically identical between the two universes. **Sharia screening removes a specific underperforming segment of the market while leaving the return-generating structure of the remaining universe entirely intact.**
+### Results will summarized as reports and if they are not they the notebook will include a conclusion at the end summarizing the work conducted
 
 \---
 
