@@ -18,10 +18,10 @@ There is little publicly available, rigorous quantitative research on Islamicall
 quant-research/
 ├── data/                          # Cached market data (May not be included in the Git)
 ├── notebooks/
-│   ├── 03_traditional_signals.ipynb   # Quick look at traditional signals used
-│   ├── 04_systematic_study.ipynb      # Systematic studies of S\&P500 vs SPUS (Phase 1 complete)
-│   ├── 05_strategies_models.ipynb     # Backtesting strategies and validating models (planned)
-│   └── 06_simulation_inference.ipynb  # Simulation-based inference market simulation (planned for long term)
+│   ├── 01_traditional_signals.ipynb   # Quick look at traditional signals used
+│   ├── 02_systematic_study.ipynb      # Systematic studies of S\&P500 vs SPUS (Phase 1 complete)
+│   ├── 03_strategies_models.ipynb     # Backtesting strategies and validating models (planned)
+│   └── 04_simulation_inference.ipynb  # Simulation-based inference market simulation (planned for long term)
 ├── src/
 │   ├── universe.py    # Universe definitions and Sharia screening
 │   ├── data.py        # Data loading and caching
