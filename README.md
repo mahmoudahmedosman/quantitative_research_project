@@ -20,7 +20,7 @@ quant-research/
 ├── notebooks/
 │   ├── 01_traditional_signals.ipynb   # Quick look at traditional signals used
 │   ├── 02_systematic_study.ipynb      # Systematic studies of S\&P500 vs SPUS (Phase 1 complete)
-│   ├── 03_strategies_models.ipynb     # Backtesting strategies and validating models (planned)
+│   ├── 03_strategies_models.ipynb     # Backtesting strategies and validating models (on-going)
 │   └── 04_simulation_inference.ipynb  # Simulation-based inference market simulation (planned for long term)
 ├── src/
 │   ├── universe.py    # Universe definitions and Sharia screening
@@ -53,10 +53,10 @@ quant-research/
 |Part|Description|Status|
 |-|-|-|
 |1a|Universe characterisation and signal IC analysis|✅ Complete|
-|1b|Stage 2 financial ratio screening|🔜 Planned|
-|2|Systematic strategies: long-only momentum, low-vol, combined signal, risk parity on SPUS|🔜 In progress|
-|3|Market modelling: PCA and surface fitting in (return, volatility, momentum) space|🔜 Planned|
-|4|Simulation-based inference: BORG-inspired market simulator with principled priors|🔬 Long-term|
+|1b|Stage 2 financial ratio screening|Planned|
+|2|Systematic strategies: long-only momentum, low-vol, combined signal, risk parity on SPUS|In progress|
+|3|Market modelling: PCA and surface fitting in (return, volatility, momentum) space|In progress|
+|4|Simulation-based inference: BORG-inspired market simulator with principled priors|Long-term|
 
 \---
 
